@@ -1,0 +1,39 @@
+<?php
+
+use Ghratzoo\ProductsList\Block\ProductsList;
+
+/** @var ProductsList $block */
+
+$products = $block->getProductsCollection();
+?>
+
+<?php if ($block->getPagerHtml()): ?>
+    <div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+<?php endif ?>
+<?php if ($products && sizeof($products)): ?>
+    <div class="table-wrapper orders-history">
+        <table class="data table table-order-items history" id="my-orders-table">
+            <thead>
+            <tr>
+                <th scope="col" class="col product"><?php echo __('Product Name') ?></th>
+                <th scope="col" class="col amount"><?php echo __('SKU') ?></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach ($products as $product): ?>
+                <tr>
+                    <td class="col id">
+                        <?php echo $product->getName() ?>
+                    </td>
+                    <td class="col id">
+                        <?php echo $product->getSku() ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php else: ?>
+    <div class="message info empty"><span><?php echo __('No any record.'); ?></span></div>
+<?php endif ?>

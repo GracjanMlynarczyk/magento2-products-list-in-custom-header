@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="page.main.title">
+            <action method="setPageTitle">
+                <argument translate="true" xsi:type="string" name="title">Products List</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="content">
+            <block class="Ghratzoo\ProductsList\Block\ProductsList"
+                   name="ghratzoo.products.list"
+                   template="Ghratzoo_ProductsList::html/productslist.phtml" />
+        </referenceBlock>
+    </body>
+</page>

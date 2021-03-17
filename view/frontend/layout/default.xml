@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="ghratzoo_header.links">
+            <block class="Ghratzoo\ProductsList\Block\Link" name="add-new-header-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Products List</argument>
+                    <argument name="path" xsi:type="string" translate="true">productslist/product/index</argument>
+                </arguments>
+            </block>
+            <block class="Ghratzoo\ProductsList\Block\Link" name="add-new-header-link1">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Products List2</argument>
+                    <argument name="path" xsi:type="string" translate="true">productslist/product/index</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
