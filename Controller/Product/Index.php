@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Ghratzoo\ProductsList\Controller\Product;
-
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -10,6 +8,10 @@ use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 
+/**
+ * Class Index
+ * @package Ghratzoo\ProductsList\Controller\Product
+ */
 class Index extends Action
 {
     /**
