@@ -6,13 +6,13 @@
             <block class="Ghratzoo\ProductsList\Block\Link" name="add-new-header-link">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">Products List</argument>
-                    <argument name="path" xsi:type="string" translate="true">productslist/product/index</argument>
+                    <argument name="path" path="productslist/product/index" xsi:type="url"/>
                 </arguments>
             </block>
             <block class="Ghratzoo\ProductsList\Block\Link" name="add-new-header-link1">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">Products List2</argument>
-                    <argument name="path" xsi:type="string" translate="true">productslist/product/index</argument>
+                    <argument name="path" path="productslist/product/index" xsi:type="url"/>
                 </arguments>
             </block>
         </referenceBlock>
